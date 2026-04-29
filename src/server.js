@@ -12,9 +12,7 @@ const app = express();
 
 // ---------- Configuracion via variables de entorno ----------
 const PORT = process.env.PORT || 3000;
-const MENSAJE_BIENVENIDA = process.env.MENSAJE_BIENVENIDA || 'API de Tareas - DevOps';
-
-// ---------- Middlewares globales ----------
+const MENSAJE_BIENVENIDA = process.env.MENSAJE_BIENVENIDA || 'API de Tareas - desplegado por Actions';// ---------- Middlewares globales ----------
 app.use(cors());                 // Permite llamadas desde el frontend Angular
 app.use(express.json());         // Parsea el body JSON de las peticiones
 
